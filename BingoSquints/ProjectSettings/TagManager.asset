@@ -15,8 +15,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - 8 Background
+  - Player
   - 
   - 
   - 
@@ -40,4 +40,37 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 11 sky
+    uniqueID: 3446135017
+    locked: 0
+  - name: 10 background
+    uniqueID: 3943425775
+    locked: 0
+  - name: 9 background
+    uniqueID: 2721821883
+    locked: 0
+  - name: 8 background
+    uniqueID: 4150948313
+    locked: 0
+  - name: 7 back char
+    uniqueID: 2791943199
+    locked: 0
+  - name: 6 light circle
+    uniqueID: 3772594915
+    locked: 0
+  - name: 5 fire outer
+    uniqueID: 147703657
+    locked: 0
+  - name: 4 fire inner
+    uniqueID: 1385163175
+    locked: 0
+  - name: 3 campfire base
+    uniqueID: 3498022773
+    locked: 0
+  - name: 2 player
+    uniqueID: 2630985575
+    locked: 0
+  - name: 1 foreground
+    uniqueID: 2443288893
     locked: 0
