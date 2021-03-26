@@ -18,6 +18,7 @@ public class Movement : MonoBehaviour
     public float wallJumpVerticalForce;
     public float wallJumpHorizontalForce;
     public float wallJumpDuration = .5f;
+    public float wallJumpGrav = 0;
 
     //Smaller value : longer time with less control after wall jump
     //Larger value : less time without control after wall jump
@@ -193,7 +194,7 @@ public class Movement : MonoBehaviour
 
     IEnumerator WallJumpingTimer(float time)
     {
-        rb.gravityScale = 0;
+        rb.gravityScale = wallJumpGrav;
         yield return new WaitForSeconds(time);
         isWallJumping = false;
         rb.gravityScale = usualGravity;
