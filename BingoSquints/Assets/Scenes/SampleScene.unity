@@ -2640,7 +2640,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 213030893}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a6ddb4d9075d5451da9c065e7eda90ea, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -2710,7 +2710,7 @@ MonoBehaviour:
   jumpForce: 6
   fallMultiplier: 3
   lowJumpMultiplier: 2
-  slideSpeed: 5
+  slideSpeed: 1
   isWallSliding: 0
   isDashing: 0
   wallJumped: 0
@@ -2737,8 +2737,8 @@ MonoBehaviour:
   wallSide: 0
   collisionRadius: 0.4
   bottomOffset: {x: 0, y: -0.3}
-  rightOffset: {x: 0.5, y: 0.2}
-  leftOffset: {x: -0.5, y: 0.2}
+  rightOffset: {x: 0.4, y: 0.2}
+  leftOffset: {x: -0.4, y: 0.2}
 --- !u!114 &237308003
 MonoBehaviour:
   m_ObjectHideFlags: 0
