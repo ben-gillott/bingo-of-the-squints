@@ -48,8 +48,9 @@ public class Movement : MonoBehaviour
         Vector2 dir = new Vector2(x,y);
         Run(dir);
 
-        //Touching a wall and not the ground ==>> Slide down
-        if(coll.onWall && !coll.onGround) 
+        //Touching a wall and not the ground AND some horizontal movement
+        //==> Wallslide
+        if(coll.onWall && !coll.onGround && (x > .25f || x < -.25f)) 
         {
             WallSlide();
         }//When no longer wall sliding:
