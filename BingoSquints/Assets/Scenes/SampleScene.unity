@@ -2707,8 +2707,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   speed: 10
-  jumpForce: 8
-  fallMultiplier: 2.5
+  jumpForce: 6
+  fallMultiplier: 3
   lowJumpMultiplier: 2
   slideSpeed: 5
   canMove: 0
@@ -2737,10 +2737,10 @@ MonoBehaviour:
   onRightWall: 0
   onLeftWall: 0
   wallSide: 0
-  collisionRadius: 0.25
+  collisionRadius: 0.4
   bottomOffset: {x: 0, y: -0.5}
-  rightOffset: {x: 0.5, y: 0}
-  leftOffset: {x: -0.5, y: 0}
+  rightOffset: {x: 0.5, y: 0.2}
+  leftOffset: {x: -0.5, y: 0.2}
 --- !u!114 &237308003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7285,7 +7285,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0006245896, y: -0.0055510104}
+  m_Offset: {x: -0.0006245896, y: -0.0006137453}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -7296,7 +7296,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13408934, y: 0.14934257}
+  m_Size: {x: 0.13408934, y: 0.13946804}
   m_EdgeRadius: 0
 --- !u!114 &1562210283
 MonoBehaviour:
