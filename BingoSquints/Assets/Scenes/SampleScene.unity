@@ -2555,7 +2555,7 @@ Transform:
   m_GameObject: {fileID: 205110259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 213030896}
   m_RootOrder: 0
@@ -2600,7 +2600,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 36b0b8d5a73ed462a890c1204cfa314a, type: 3}
   m_Color: {r: 0.15334353, g: 0.9245283, b: 0.12646852, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2621,9 +2621,9 @@ GameObject:
   m_Component:
   - component: {fileID: 213030896}
   - component: {fileID: 213030895}
-  - component: {fileID: 213030894}
   - component: {fileID: 213030897}
   - component: {fileID: 213030898}
+  - component: {fileID: 213030894}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2655,7 +2655,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.4}
+  m_Size: {x: 1.1, y: 1.1}
   m_EdgeRadius: 0
 --- !u!50 &213030895
 Rigidbody2D:
@@ -2686,8 +2686,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213030893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.49, y: 0.74, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 205110260}
   m_Father: {fileID: 0}
