@@ -10285,6 +10285,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5257795528477364437, guid: ffc3c75fa9b4e43fe8970059c1f19ad9, type: 3}
+      propertyPath: slideSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257795528477364437, guid: ffc3c75fa9b4e43fe8970059c1f19ad9, type: 3}
+      propertyPath: wallJumpDuration
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffc3c75fa9b4e43fe8970059c1f19ad9, type: 3}
 --- !u!1001 &9212302119434788638

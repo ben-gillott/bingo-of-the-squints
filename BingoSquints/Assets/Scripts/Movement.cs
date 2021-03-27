@@ -38,10 +38,11 @@ public class Movement : MonoBehaviour
     public bool isWallJumping;
     public int side = 1; //TODO: Use for animations
     public bool hasHorizontalInput;
-    // [Space]
-    // [Header("Better Jumping")]
-    // private bool betterJumpingEnabled = true;
-    // public float fallMultiplier = 2.5f;
+    
+    [Space]
+    [Header("Better Jumping")]
+    public bool betterJumpingEnabled = true;
+    public float fallMultiplier = 2.5f;
     // public float lowJumpMultiplier = 2f;
 
     void Start(){
@@ -98,19 +99,19 @@ public class Movement : MonoBehaviour
         
         // Debug.Log("main loop");
         //TODO: Removed for now, causing problems
-        //Better Jumping Physics: 
-        // if (betterJumpingEnabled){ 
-        //     //If the player is falling, fall faster according to fallMultiplier
-        //     if(rb.velocity.y < 0)
-        //     {
-        //         rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        //     }
-        //     //If the player is jumping, they dont jump as far unless they hold the jump button (acording to lowJumpMultiplier)
-        //     else if(rb.velocity.y > 0 && !Input.GetButton("Jump"))
-        //     {
-        //         rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-        //     }
-        // }
+        // Better Jumping Physics: 
+        if (betterJumpingEnabled){ 
+            //If the player is falling, fall faster according to fallMultiplier
+            if(rb.velocity.y < 0) //If falling
+            {
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier) * Time.deltaTime;
+            }
+            //If the player is jumping, they dont jump as far unless they hold the jump button (acording to lowJumpMultiplier)
+            // else if(rb.velocity.y > 0 && !Input.GetButton("Jump"))
+            // {
+            //     rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier) * Time.deltaTime;
+            // }
+        }
     }
 
 
@@ -146,7 +147,7 @@ public class Movement : MonoBehaviour
     //Walljump
     private void WallJump(Vector2 dir) //TODO: In progress
     {
-        // betterJumpingEnabled = false;
+        betterJumpingEnabled = false;
         isWallJumping = true;
 
         StartCoroutine(WallJumpingTimer(wallJumpDuration));
@@ -160,6 +161,8 @@ public class Movement : MonoBehaviour
     //The player slides down the wall this frame
     private void WallSlide()
     {
+        isWallJumping = false;
+        
         if(!isWallSliding){ //Start of the slide
             isWallSliding = true;
             wallSlideTimeElapsed = 0;
@@ -182,7 +185,7 @@ public class Movement : MonoBehaviour
     //Player touches or leaves the ground - triggers once
     private void TouchGround(){
         isGrounded = true;
-        // betterJumpingEnabled = true;
+        betterJumpingEnabled = true;
         isWallJumping = false;
     }
     private void LeaveGround(){
@@ -202,5 +205,6 @@ public class Movement : MonoBehaviour
 
         rb.gravityScale = usualGravity;
         isWallJumping = false;
+        betterJumpingEnabled = true;
     }
 }
