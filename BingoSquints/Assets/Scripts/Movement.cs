@@ -19,10 +19,15 @@ public class Movement : MonoBehaviour
     public float wallJumpHorizontalForce;
     public float wallJumpDuration;
     public float wallJumpGrav;
-    public float inpSensitivity;
-    
+    private float inpSensitivity = .2f;
+ 
     private float usualGravity;
+
     private float wallJumpTimeElapsed = 0;
+    public float wallJumpLerpDuration = 2;
+
+    private float wallSlideTimeElapsed = 0;
+    public float wallSlideLerpDuration = 1;
     
     
 
@@ -125,7 +130,7 @@ public class Movement : MonoBehaviour
         else if (isWallJumping){
             //Just after wall jumping, limit movement
             wallJumpTimeElapsed += Time.deltaTime;
-            float lerpvalue = wallJumpTimeElapsed/(wallJumpDuration*2);
+            float lerpvalue = wallJumpTimeElapsed/wallJumpLerpDuration;
             rb.velocity = Vector2.Lerp(rb.velocity, runVelocity, lerpvalue);
         }
     }
@@ -152,15 +157,25 @@ public class Movement : MonoBehaviour
     }
 
 
-    //The player slides down the wall this frame, or stops wall sliding
+    //The player slides down the wall this frame
     private void WallSlide()
     {
-        isWallSliding = true;
-        rb.velocity = new Vector2(rb.velocity.x, -slideSpeed);
+        if(!isWallSliding){ //Start of the slide
+            isWallSliding = true;
+            wallSlideTimeElapsed = 0;
+        }
+
+        wallSlideTimeElapsed += Time.deltaTime;
+        rb.gravityScale = 0;
+
+        Vector2 slideVelocity = new Vector2(rb.velocity.x, -slideSpeed);
+        Vector2 playerVelocity = rb.velocity;
+        rb.velocity = Vector2.Lerp(playerVelocity, slideVelocity, wallSlideTimeElapsed / wallSlideLerpDuration);
     }
     private void EndWallSlide()
     {
         isWallSliding = false;
+        rb.gravityScale = usualGravity;
     }
     
 

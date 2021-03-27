@@ -209,16 +209,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e762bcaf87ccb464e9a1af96017246cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rb: {fileID: 5257795528404846396}
   speed: 10
-  slideSpeed: 0.5
+  slideSpeed: 0.75
   jumpForce: 15
   wallJumpVerticalForce: 10
   wallJumpHorizontalForce: 10
   wallJumpDuration: 0.8
   wallJumpGrav: 1
-  inpSensitivity: 0.2
-  isGrounded: 0
+  wallJumpLerpDuration: 3
+  wallSlideLerpDuration: 2
+  isGrounded: 1
   isWallSliding: 0
   isWallJumping: 0
   side: 1
@@ -266,6 +267,7 @@ MonoBehaviour:
   damageableLayers:
     serializedVersion: 2
     m_Bits: 256
+  Damage: 1
 --- !u!1 &5257795528413834016
 GameObject:
   m_ObjectHideFlags: 0
