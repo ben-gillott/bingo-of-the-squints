@@ -8,6 +8,8 @@ public class Movement : MonoBehaviour
     [HideInInspector]
     public Rigidbody2D rb;
     private Collision coll;
+    public SpriteRenderer spriteRenderer;
+    public Animator anim;
 
 
     [Space]
@@ -29,7 +31,6 @@ public class Movement : MonoBehaviour
     private float wallSlideTimeElapsed = 0;
     public float wallSlideLerpDuration = 1;
     
-    
 
     [Space]
     [Header("Booleans")]
@@ -49,6 +50,7 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collision>();
         usualGravity = rb.gravityScale;
+        // spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 
@@ -61,7 +63,7 @@ public class Movement : MonoBehaviour
         
         Vector2 dir = new Vector2(x,y);
         Run(dir);
-        
+        Flip();
 
         
         //Wall sliding this frame
@@ -121,7 +123,13 @@ public class Movement : MonoBehaviour
 
     //Move the character
     private void Run(Vector2 dir){
-
+        //TODO: animations
+        if(dir.x != 0){
+            anim.SetBool("walk", true);
+        }else{
+            anim.SetBool("walk", false);
+        }
+        
         Vector2 runVelocity = new Vector2(dir.x * speed, rb.velocity.y);
         if(!isWallJumping)
         {
@@ -206,5 +214,23 @@ public class Movement : MonoBehaviour
         rb.gravityScale = usualGravity;
         isWallJumping = false;
         betterJumpingEnabled = true;
+    }
+
+    //Via simmins
+    void Flip()
+    {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        if (horizontal > 0)
+        {
+            //transform.localScale = new Vector3(1, 1, 1);
+            // facingRight = true;
+            spriteRenderer.flipX = false;
+        }
+        else if (horizontal < 0)
+        {
+            //transform.localScale = new Vector3(-1, 1, 1);
+            // facingRight = false;
+            spriteRenderer.flipX = true;
+        }
     }
 }
