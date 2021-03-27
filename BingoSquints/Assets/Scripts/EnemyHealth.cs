@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : BaseHealth
+public class EnemyHealth : BaseHealth
 {
-    public EventPlayerDeath OnNobanDeath;
+    public EventHenchmanDeath OnNobanDeath;
 
     [SerializeField]
     private int startingHealth = 5;
@@ -18,7 +18,7 @@ public class PlayerHealth : BaseHealth
     public override void ApplyDamage(int Damage, GameObject Instagator)
     {
 
-        Debug.Log("ouch");
+        Debug.Log("ouch Enemy");
         base.ApplyDamage(Damage, Instagator);
     }
 
