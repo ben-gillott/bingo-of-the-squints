@@ -180,8 +180,6 @@ public class Movement : MonoBehaviour
     }
 
 
-
-
     //** ========= Helper Functions ========= **//
 
     IEnumerator DisableMovement(float time)

@@ -9,7 +9,7 @@ public class Collision : MonoBehaviour
     public LayerMask groundLayer;
 
     [Space]
-    [Header("Collision Statuses")]
+    [Header("Statuses")]
     public bool onGround;
     public bool onWall;
     public bool onRightWall;
@@ -17,27 +17,24 @@ public class Collision : MonoBehaviour
     public int wallSide;
 
     [Space]
-
     [Header("Collision")]
-    public float collisionRadius = 0.25f;
-    public Vector2 bottomOffset, rightOffset, leftOffset;
+    public Vector2 bottomPoint, bottomSize;
+    public Vector2 leftPoint, leftSize;
+    public Vector2 rightPoint, rightSize;
 
     private Color debugCollisionColor = Color.red;
-
 
     //Update the value of collision states based on a series of circle colliders
     void Update()
     {  
+        onGround = Physics2D.OverlapBox((Vector2)transform.position + bottomPoint, bottomSize, 0f, groundLayer);
         
-        onGround = Physics2D.OverlapCircle((Vector2)transform.position + bottomOffset, collisionRadius, groundLayer);
-    
-        onWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer) 
-            || Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
-
-        onRightWall = Physics2D.OverlapCircle((Vector2)transform.position + rightOffset, collisionRadius, groundLayer);
+        onLeftWall = Physics2D.OverlapBox((Vector2)transform.position + leftPoint, leftSize, 0f, groundLayer);
         
-        onLeftWall = Physics2D.OverlapCircle((Vector2)transform.position + leftOffset, collisionRadius, groundLayer);
+        onRightWall = Physics2D.OverlapBox((Vector2)transform.position + rightPoint, rightSize, 0f, groundLayer);
 
+        onWall = onLeftWall || onRightWall;
+        
         wallSide = onRightWall ? -1 : 1;
     }
 
@@ -46,10 +43,12 @@ public class Collision : MonoBehaviour
     {
         Gizmos.color = Color.red;
 
-        var positions = new Vector2[] { bottomOffset, rightOffset, leftOffset };
+        Vector3 bot3D = bottomPoint;
+        Vector3 left3D = leftPoint;
+        Vector3 right3D = rightPoint;
 
-        Gizmos.DrawWireSphere((Vector2)transform.position  + bottomOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + rightOffset, collisionRadius);
-        Gizmos.DrawWireSphere((Vector2)transform.position + leftOffset, collisionRadius);
+        Gizmos.DrawWireCube((bot3D + transform.position), bottomSize);
+        Gizmos.DrawWireCube((left3D + transform.position), leftSize);
+        Gizmos.DrawWireCube((right3D + transform.position), rightSize);
     }
 }
