@@ -20,12 +20,9 @@ public class Movement : MonoBehaviour
     public float wallJumpDuration;
     public float wallJumpGrav;
     public float inpSensitivity;
-
-    //Smaller value : longer time with less control after wall jump
-    //Larger value : less time without control after wall jump
-    public float wallJumpLerp = 10; 
-
+    
     private float usualGravity;
+    private float wallJumpTimeElapsed = 0;
     
     
 
@@ -35,7 +32,6 @@ public class Movement : MonoBehaviour
     public bool isWallSliding;
     public bool isWallJumping;
     public int side = 1; //TODO: Use for animations
-    private bool canMove = true;
     public bool hasHorizontalInput;
     // [Space]
     // [Header("Better Jumping")]
@@ -95,7 +91,7 @@ public class Movement : MonoBehaviour
             }
         }
         
-        
+        // Debug.Log("main loop");
         //TODO: Removed for now, causing problems
         //Better Jumping Physics: 
         // if (betterJumpingEnabled){ 
@@ -119,20 +115,18 @@ public class Movement : MonoBehaviour
 
     //Move the character
     private void Run(Vector2 dir){
-        if(!canMove){
-            return;
-        }
 
+        Vector2 runVelocity = new Vector2(dir.x * speed, rb.velocity.y);
         if(!isWallJumping)
         {
             //Regular move
-            rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
+            rb.velocity = runVelocity;
         }
         else if (isWallJumping){
-            //Normally:
-            // rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
             //Just after wall jumping, limit movement
-            // rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * speed, rb.velocity.y)), wallJumpLerp * Time.deltaTime);
+            wallJumpTimeElapsed += Time.deltaTime;
+            float lerpvalue = wallJumpTimeElapsed/(wallJumpDuration*2);
+            rb.velocity = Vector2.Lerp(rb.velocity, runVelocity, lerpvalue);
         }
     }
 
@@ -150,7 +144,6 @@ public class Movement : MonoBehaviour
         // betterJumpingEnabled = false;
         isWallJumping = true;
 
-        StartCoroutine(DisableMovement(wallJumpDuration));
         StartCoroutine(WallJumpingTimer(wallJumpDuration));
 
         Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
@@ -162,9 +155,6 @@ public class Movement : MonoBehaviour
     //The player slides down the wall this frame, or stops wall sliding
     private void WallSlide()
     {
-        if (!canMove)
-            return;
-
         isWallSliding = true;
         rb.velocity = new Vector2(rb.velocity.x, -slideSpeed);
     }
@@ -187,15 +177,9 @@ public class Movement : MonoBehaviour
 
     //** ========= Helper Functions ========= **//
 
-    IEnumerator DisableMovement(float time)
-    {
-        canMove = false;
-        yield return new WaitForSeconds(time);
-        canMove = true;
-    }
-
     IEnumerator WallJumpingTimer(float time)
     {
+        wallJumpTimeElapsed = 0;
         isWallJumping = true;
         rb.gravityScale = wallJumpGrav;
 

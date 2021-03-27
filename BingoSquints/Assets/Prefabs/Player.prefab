@@ -50,7 +50,7 @@ Rigidbody2D:
   m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 3
+  m_GravityScale: 4
   m_Material: {fileID: 6200000, guid: a6ddb4d9075d5451da9c065e7eda90ea, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -97,13 +97,12 @@ MonoBehaviour:
   rb: {fileID: 0}
   speed: 10
   slideSpeed: 0.5
-  jumpForce: 15
-  wallJumpVerticalForce: 15
-  wallJumpHorizontalForce: 15
-  wallJumpDuration: 0.1
-  wallJumpGrav: 0.5
+  jumpForce: 10
+  wallJumpVerticalForce: 10
+  wallJumpHorizontalForce: 10
+  wallJumpDuration: 0.8
+  wallJumpGrav: 1
   inpSensitivity: 0.2
-  wallJumpLerp: 10
   isGrounded: 0
   isWallSliding: 0
   isWallJumping: 0
@@ -132,9 +131,9 @@ MonoBehaviour:
   bottomPoint: {x: 0, y: -1.5}
   bottomSize: {x: 1.35, y: 0.15}
   leftPoint: {x: -0.75, y: 0}
-  leftSize: {x: 0.15, y: 2.5}
+  leftSize: {x: 0.3, y: 2.5}
   rightPoint: {x: 0.75, y: 0}
-  rightSize: {x: 0.15, y: 2.5}
+  rightSize: {x: 0.3, y: 2.5}
 --- !u!1 &5257795528413834016
 GameObject:
   m_ObjectHideFlags: 0
