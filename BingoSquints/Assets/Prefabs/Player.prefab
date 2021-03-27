@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5257795528404846371}
   - component: {fileID: 5257795528404846396}
-  - component: {fileID: 5257795528404846370}
-  - component: {fileID: 5257795528404846369}
   - component: {fileID: 5257795528404846397}
+  - component: {fileID: 5257795528477364437}
+  - component: {fileID: 5257795528477364438}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -56,56 +56,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5257795528404846370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5257795528404846398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e762bcaf87ccb464e9a1af96017246cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  speed: 10
-  slideSpeed: 1
-  jumpForce: 10
-  wallJumpVerticalForce: 10
-  wallJumpHorizontalForce: 10
-  wallJumpDuration: 0.09
-  wallJumpLerp: 5
-  isGrounded: 0
-  isWallSliding: 0
-  isWallJumping: 0
-  side: 1
---- !u!114 &5257795528404846369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5257795528404846398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44e272a5ed13143c1947e19dd2bbf223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 4096
-  onGround: 0
-  onWall: 0
-  onRightWall: 0
-  onLeftWall: 0
-  wallSide: 0
-  bottomPoint: {x: 0, y: -1.5}
-  bottomSize: {x: 1.35, y: 0.15}
-  leftPoint: {x: -0.75, y: 0}
-  leftSize: {x: 0.15, y: 2.5}
-  rightPoint: {x: 0.75, y: 0}
-  rightSize: {x: 0.15, y: 2.5}
 --- !u!61 &5257795528404846397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -132,6 +82,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5257795528477364437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5257795528404846398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e762bcaf87ccb464e9a1af96017246cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 10
+  slideSpeed: 0.5
+  jumpForce: 15
+  wallJumpVerticalForce: 15
+  wallJumpHorizontalForce: 15
+  wallJumpDuration: 0.1
+  wallJumpGrav: 0.5
+  inpSensitivity: 0.2
+  wallJumpLerp: 10
+  isGrounded: 0
+  isWallSliding: 0
+  isWallJumping: 0
+  side: 1
+  hasHorizontalInput: 0
+--- !u!114 &5257795528477364438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5257795528404846398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e272a5ed13143c1947e19dd2bbf223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 4096
+  onGround: 0
+  onWall: 0
+  onRightWall: 0
+  onLeftWall: 0
+  wallSide: 0
+  bottomPoint: {x: 0, y: -1.5}
+  bottomSize: {x: 1.35, y: 0.15}
+  leftPoint: {x: -0.75, y: 0}
+  leftSize: {x: 0.15, y: 2.5}
+  rightPoint: {x: 0.75, y: 0}
+  rightSize: {x: 0.15, y: 2.5}
 --- !u!1 &5257795528413834016
 GameObject:
   m_ObjectHideFlags: 0

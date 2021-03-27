@@ -13,12 +13,13 @@ public class Movement : MonoBehaviour
     [Space]
     [Header("Stats")]
     public float speed;
-    public float slideSpeed = 5;
+    public float slideSpeed;
     public float jumpForce;
     public float wallJumpVerticalForce;
     public float wallJumpHorizontalForce;
-    public float wallJumpDuration = .5f;
-    public float wallJumpGrav = 0;
+    public float wallJumpDuration;
+    public float wallJumpGrav;
+    public float inpSensitivity;
 
     //Smaller value : longer time with less control after wall jump
     //Larger value : less time without control after wall jump
@@ -35,7 +36,7 @@ public class Movement : MonoBehaviour
     public bool isWallJumping;
     public int side = 1; //TODO: Use for animations
     private bool canMove = true;
-
+    public bool hasHorizontalInput;
     // [Space]
     // [Header("Better Jumping")]
     // private bool betterJumpingEnabled = true;
@@ -54,18 +55,20 @@ public class Movement : MonoBehaviour
         float y = Input.GetAxis("Vertical");
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
-
+        hasHorizontalInput = (x > inpSensitivity || x < -inpSensitivity);
+        
         Vector2 dir = new Vector2(x,y);
         Run(dir);
+        
 
-
+        
         //Wall sliding this frame
         //TODO: only stick if appropriate side, check col right and left
-        if(coll.onWall && !coll.onGround && (x > .2f || x < -.2f))  
+        if(coll.onWall && !coll.onGround && hasHorizontalInput)  
         {
             WallSlide();
-        }//No longer wall sliding
-        else if (isWallSliding && (!coll.onWall || coll.onGround || isWallJumping)){
+        }//No longer wall sliding for the first time
+        else if (isWallSliding  && (!coll.onWall || coll.onGround || !hasHorizontalInput)){
             EndWallSlide();
         }
 
@@ -129,7 +132,7 @@ public class Movement : MonoBehaviour
             //Normally:
             // rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
             //Just after wall jumping, limit movement
-            rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * speed, rb.velocity.y)), wallJumpLerp * Time.deltaTime);
+            // rb.velocity = Vector2.Lerp(rb.velocity, (new Vector2(dir.x * speed, rb.velocity.y)), wallJumpLerp * Time.deltaTime);
         }
     }
 
@@ -151,6 +154,7 @@ public class Movement : MonoBehaviour
         StartCoroutine(WallJumpingTimer(wallJumpDuration));
 
         Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
+
         rb.velocity = Vector2.up*wallJumpVerticalForce + wallDir*wallJumpHorizontalForce;
     }
 
@@ -192,9 +196,12 @@ public class Movement : MonoBehaviour
 
     IEnumerator WallJumpingTimer(float time)
     {
+        isWallJumping = true;
         rb.gravityScale = wallJumpGrav;
+
         yield return new WaitForSeconds(time);
-        isWallJumping = false;
+
         rb.gravityScale = usualGravity;
+        isWallJumping = false;
     }
 }
