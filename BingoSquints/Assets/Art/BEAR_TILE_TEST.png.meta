@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: d151e1ba63b96f74990efb51627b6426
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7194825736035460750
+    second: BEAR_TILE_TEST_0
+  - first:
+      213: 7400887999098347187
+    second: BEAR_TILE_TEST_1
+  - first:
+      213: -1735419677453710235
+    second: BEAR_TILE_TEST_2
+  - first:
+      213: 4296293305844702822
+    second: BEAR_TILE_TEST_3
+  - first:
+      213: -723581921176366817
+    second: BEAR_TILE_TEST_4
+  - first:
+      213: 5060357678988989270
+    second: BEAR_TILE_TEST_5
+  - first:
+      213: 1431354894775916377
+    second: BEAR_TILE_TEST_6
+  - first:
+      213: -8931695439588188034
+    second: BEAR_TILE_TEST_7
+  - first:
+      213: 945383766121344832
+    second: BEAR_TILE_TEST_8
+  - first:
+      213: -2374946579428726425
+    second: BEAR_TILE_TEST_9
+  - first:
+      213: 5057931649908857639
+    second: BEAR_TILE_TEST_10
+  - first:
+      213: -1809977011031976015
+    second: BEAR_TILE_TEST_11
+  - first:
+      213: -4800130606353475591
+    second: BEAR_TILE_TEST_12
+  - first:
+      213: -1941404613110116381
+    second: BEAR_TILE_TEST_13
+  - first:
+      213: -4363902005961670776
+    second: BEAR_TILE_TEST_14
+  - first:
+      213: 5111268900561034909
+    second: BEAR_TILE_TEST_15
+  - first:
+      213: 1183447992502663685
+    second: BEAR_TILE_TEST_16
+  - first:
+      213: -1505720919090775439
+    second: BEAR_TILE_TEST_17
+  - first:
+      213: -733269873402559377
+    second: BEAR_TILE_TEST_18
+  - first:
+      213: -3122044288775014595
+    second: BEAR_TILE_TEST_19
+  - first:
+      213: -3818270466120907860
+    second: BEAR_TILE_TEST_20
+  - first:
+      213: 4642683765849038975
+    second: BEAR_TILE_TEST_21
+  - first:
+      213: -7008334233978046279
+    second: BEAR_TILE_TEST_22
+  - first:
+      213: 1962777976003096842
+    second: BEAR_TILE_TEST_23
+  - first:
+      213: -8146770512906951716
+    second: BEAR_TILE_TEST_24
+  - first:
+      213: -6841275086933421361
+    second: BEAR_TILE_TEST_25
+  - first:
+      213: -6925644048399224866
+    second: BEAR_TILE_TEST_26
+  - first:
+      213: 2517066261658616832
+    second: BEAR_TILE_TEST_27
+  - first:
+      213: -6396003391131816429
+    second: BEAR_TILE_TEST_28
+  - first:
+      213: 574917057551201886
+    second: BEAR_TILE_TEST_29
+  - first:
+      213: 2880605953809276781
+    second: BEAR_TILE_TEST_30
+  - first:
+      213: -1692620127897717240
+    second: BEAR_TILE_TEST_31
+  - first:
+      213: 3822771889110466334
+    second: BEAR_TILE_TEST_32
+  - first:
+      213: -6374281822033378762
+    second: BEAR_TILE_TEST_33
+  - first:
+      213: 2025358280580139488
+    second: BEAR_TILE_TEST_34
+  - first:
+      213: 5611008824024324324
+    second: BEAR_TILE_TEST_35
+  - first:
+      213: -5589705591834066412
+    second: BEAR_TILE_TEST_36
+  - first:
+      213: -1630695309253855526
+    second: BEAR_TILE_TEST_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 3607
+        width: 296
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27994c6ec18d62c90800000000000000
+      internalID: -7194825736035460750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 3607
+        width: 221
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be55b07c6c35b660800000000000000
+      internalID: 7400887999098347187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_2
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 3607
+        width: 245
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c062d7ffc8ae7e0800000000000000
+      internalID: -1735419677453710235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_3
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 3607
+        width: 245
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e13c9bfff7f9b30800000000000000
+      internalID: 4296293305844702822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_4
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 3608
+        width: 240
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11536e831255f5f0800000000000000
+      internalID: -723581921176366817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_5
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 3608
+        width: 240
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6531f848f700a3640800000000000000
+      internalID: 5060357678988989270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_6
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 3609
+        width: 222
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95792a271b13dd310800000000000000
+      internalID: 1431354894775916377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_7
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 3608
+        width: 247
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70ae51e15e3c0480800000000000000
+      internalID: -8931695439588188034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_8
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 3608
+        width: 250
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f6514c68dae1d00800000000000000
+      internalID: 945383766121344832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_9
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 3609
+        width: 257
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7692f944bae7a0fd0800000000000000
+      internalID: -2374946579428726425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BEAR_TILE_TEST_10
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 3609
+        width: 251
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bd50b9902613640800000000000000
+      internalID: 5057931649908857639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a097532d54c400e45af2c1c5bbcf852c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

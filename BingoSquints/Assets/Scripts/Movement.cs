@@ -123,11 +123,20 @@ public class Movement : MonoBehaviour
 
     //Move the character
     private void Run(Vector2 dir){
-        //TODO: animations
-        if(dir.x != 0){
-            anim.SetBool("walk", true);
-        }else{
-            anim.SetBool("walk", false);
+        if (anim == null)
+        {
+            return;
+        }
+        else
+        {  //TODO: animations
+            if (dir.x != 0)
+            {
+                anim.SetBool("walk", true);
+            }
+            else
+            {
+                anim.SetBool("walk", false);
+            }
         }
         
         Vector2 runVelocity = new Vector2(dir.x * speed, rb.velocity.y);
