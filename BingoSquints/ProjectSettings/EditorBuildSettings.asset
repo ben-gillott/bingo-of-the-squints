@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 1719af1df239b8e45a75c4b55fff1628
   - enabled: 1
+    path: Assets/Scenes/BeginningCutScenes.unity
+    guid: 80cd530fb654c2741a433e3a98569f91
+  - enabled: 1
     path: Assets/Scenes/BeatTest.unity
     guid: e3a84a3ce2e476f4b9267a5a71b10b1e
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 2eba7f8b7071e4640929dd9d612b5f3d
   m_configObjects: {}
