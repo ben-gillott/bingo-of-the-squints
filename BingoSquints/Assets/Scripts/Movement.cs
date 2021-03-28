@@ -74,6 +74,7 @@ public class Movement : MonoBehaviour
         if(coll.onWall && !coll.onGround && hasHorizontalInput)  
         {
             WallSlide();
+            
         }//No longer wall sliding for the first time
         else if (isWallSliding  && (!coll.onWall || coll.onGround || !hasHorizontalInput)){
             EndWallSlide();
@@ -173,21 +174,22 @@ public class Movement : MonoBehaviour
 
     //The player slides down the wall this frame
     private void WallSlide()
-    {
-        isWallJumping = false;
-        
+    {   
         if(!isWallSliding){ //Start of the slide
             isWallSliding = true;
             wallSlideTimeElapsed = 0;
         }
 
         wallSlideTimeElapsed += Time.deltaTime;
-        Physics.gravity = new Vector3(0f, 0f, 0f);
 
-        Vector2 slideVelocity = new Vector2(rb.velocity.x, -slideSpeed);
-        Vector2 playerVelocity = rb.velocity;
-        rb.velocity = Vector2.Lerp(playerVelocity, slideVelocity, wallSlideTimeElapsed / wallSlideLerpDuration);
+        Vector3 slideVelocity = new Vector3(rb.velocity.x, -slideSpeed, 0);
+        Vector3 playerVelocity = rb.velocity;
+
+    //TODO: Why does it stick to the wall
+        //Lerps between player velocity and a negative wall slide speed to give the juicy katana zero feel
+        rb.velocity = Vector3.Lerp(playerVelocity, slideVelocity, wallSlideTimeElapsed / wallSlideLerpDuration);
     }
+
     private void EndWallSlide()
     {
         isWallSliding = false;
