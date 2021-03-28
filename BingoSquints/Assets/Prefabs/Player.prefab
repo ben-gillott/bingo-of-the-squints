@@ -57,7 +57,7 @@ MonoBehaviour:
   wallJumpVerticalForce: 10
   wallJumpHorizontalForce: 10
   wallJumpDuration: 0.4
-  wallJumpGrav: 1
+  wallJumpGrav: 5
   usualGravity: {x: 0, y: -15, z: 0}
   wallJumpLerpDuration: 3
   wallSlideLerpDuration: 10
