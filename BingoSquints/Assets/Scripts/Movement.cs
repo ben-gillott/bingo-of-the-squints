@@ -223,13 +223,13 @@ public class Movement : MonoBehaviour
     void Flip()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
-        if (horizontal > 0)
+        if (horizontal < 0)
         {
             //transform.localScale = new Vector3(1, 1, 1);
             // facingRight = true;
             spriteRenderer.flipX = false;
         }
-        else if (horizontal < 0)
+        else if (horizontal > 0)
         {
             //transform.localScale = new Vector3(-1, 1, 1);
             // facingRight = false;
