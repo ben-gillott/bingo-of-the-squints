@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7012959356695485469}
   - component: {fileID: 5095820955876780247}
   - component: {fileID: 6752868748289984771}
+  - component: {fileID: 8611830133738906334}
+  - component: {fileID: 349931828}
   m_Layer: 12
   m_Name: forest_plat_middle
   m_TagString: Untagged
@@ -96,3 +98,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4760883800581170463, guid: 53df9e83ded6a8744bf8c74949052d7d, type: 3}
+--- !u!114 &8611830133738906334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752868748289984770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d562bbaf7c03bb54397d74ac32731038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpPower: 4
+--- !u!65 &349931828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752868748289984770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.00825068, z: 0.01}
+  m_Center: {x: 0.005, y: 0.0065635513, z: 0.0049999985}

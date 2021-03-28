@@ -36,15 +36,13 @@ public class PlayerAction : MonoBehaviour
 
     public void Interact()
     {
-        //Collider2D HitObj = Physics2D.OverlapCircleAll(attackPoint.position, AttackRange, damageableLayers);
-        //if (HitObj != null)
-        //{
-        //    HitObj.gameObject
-        //}
-        //else
-        //{
-        //    Return;
-        //}
+        Collider2D[] HitObj = Physics2D.OverlapCircleAll(attackPoint.position, AttackRange, damageableLayers);
+        foreach (Collider2D obj in HitObj)
+        {
+            IInteract target = obj.GetComponent<IInteract>();
+            target.InteractFunction(gameObject);
+
+        }
     }
 
     private void OnDrawGizmosSelected()
