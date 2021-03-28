@@ -18,26 +18,28 @@ public class Collision : MonoBehaviour
 
     [Space]
     [Header("Collision")]
-    public Vector2 bottomPoint, bottomSize;
-    public Vector2 leftPoint, leftSize;
-    public Vector2 rightPoint, rightSize;
+    public Vector3 bottomPoint, bottomSize;
+    public Vector3 leftPoint, leftSize;
+    public Vector3 rightPoint, rightSize;
 
     private Color debugCollisionColor = Color.red;
 
     //Update the value of collision states based on a series of circle colliders
     void Update()
     {  
-        onGround = Physics2D.OverlapBox((Vector2)transform.position + bottomPoint, bottomSize, 0f, groundLayer);
+        Collider[] onGroundColls = Physics.OverlapBox((Vector3)transform.position + bottomPoint, bottomSize/2, Quaternion.identity, groundLayer);
+        onGround = (onGroundColls.Length > 0);
         
-        onLeftWall = Physics2D.OverlapBox((Vector2)transform.position + leftPoint, leftSize, 0f, groundLayer);
-        
-        onRightWall = Physics2D.OverlapBox((Vector2)transform.position + rightPoint, rightSize, 0f, groundLayer);
+        Collider[] onLeftWallColl = Physics.OverlapBox((Vector3)transform.position + leftPoint, leftSize/2, Quaternion.identity, groundLayer);        
+        onLeftWall = (onLeftWallColl.Length > 0);
 
+        Collider[] onRightWallColl = Physics.OverlapBox((Vector3)transform.position + rightPoint, rightSize/2, Quaternion.identity, groundLayer);
+        onRightWall = (onRightWallColl.Length > 0);
+        
         onWall = onLeftWall || onRightWall;
         
         wallSide = onRightWall ? -1 : 1;
     }
-
 
     void OnDrawGizmos()
     {

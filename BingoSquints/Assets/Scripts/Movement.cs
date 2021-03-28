@@ -6,7 +6,9 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [HideInInspector]
-    public Rigidbody2D rb;
+    // public Rigidbody2D rb;
+    public Rigidbody rb;
+
     private Collision coll;
     public SpriteRenderer spriteRenderer;
     public Animator anim;
@@ -23,7 +25,7 @@ public class Movement : MonoBehaviour
     public float wallJumpGrav;
     private float inpSensitivity = .2f;
  
-    private float usualGravity;
+    public Vector3 usualGravity;
 
     private float wallJumpTimeElapsed = 0;
     public float wallJumpLerpDuration = 2;
@@ -47,9 +49,10 @@ public class Movement : MonoBehaviour
     // public float lowJumpMultiplier = 2f;
 
     void Start(){
-        rb = GetComponent<Rigidbody2D>();
+        Physics.gravity = usualGravity;
+        rb = GetComponent<Rigidbody>();
+
         coll = GetComponent<Collision>();
-        usualGravity = rb.gravityScale;
         // spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -106,7 +109,7 @@ public class Movement : MonoBehaviour
             //If the player is falling, fall faster according to fallMultiplier
             if(rb.velocity.y < 0) //If falling
             {
-                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier) * Time.deltaTime;
+                // rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier) * Time.deltaTime;
             }
             //If the player is jumping, they dont jump as far unless they hold the jump button (acording to lowJumpMultiplier)
             // else if(rb.velocity.y > 0 && !Input.GetButton("Jump"))
@@ -125,9 +128,9 @@ public class Movement : MonoBehaviour
     private void Run(Vector2 dir){
 
         if(coll.onGround && hasHorizontalInput){
-            anim.SetBool("walking", true);
+            // anim.SetBool("walking", true);
         }else{
-            anim.SetBool("walking", false);
+            // anim.SetBool("walking", false);
         }
 
 
@@ -150,9 +153,8 @@ public class Movement : MonoBehaviour
     private void Jump(Vector2 dir)
     {
         //Call Jump animation
-        
-        rb.velocity = new Vector2(rb.velocity.x, 0);
-        rb.velocity += Vector2.up * jumpForce; 
+        rb.velocity = new Vector3(rb.velocity.x, 0, 0);
+        rb.velocity += Vector3.up * jumpForce; 
     }
 
     //Walljump
@@ -180,7 +182,7 @@ public class Movement : MonoBehaviour
         }
 
         wallSlideTimeElapsed += Time.deltaTime;
-        rb.gravityScale = 0;
+        Physics.gravity = new Vector3(0f, 0f, 0f);
 
         Vector2 slideVelocity = new Vector2(rb.velocity.x, -slideSpeed);
         Vector2 playerVelocity = rb.velocity;
@@ -189,7 +191,7 @@ public class Movement : MonoBehaviour
     private void EndWallSlide()
     {
         isWallSliding = false;
-        rb.gravityScale = usualGravity;
+        Physics.gravity = usualGravity;
     }
     
 
@@ -210,11 +212,11 @@ public class Movement : MonoBehaviour
     {
         wallJumpTimeElapsed = 0;
         isWallJumping = true;
-        rb.gravityScale = wallJumpGrav;
+        Physics.gravity = new Vector3(0f, wallJumpGrav, 0f);
 
         yield return new WaitForSeconds(time);
 
-        rb.gravityScale = usualGravity;
+        Physics.gravity = usualGravity;
         isWallJumping = false;
         betterJumpingEnabled = true;
     }
