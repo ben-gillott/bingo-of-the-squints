@@ -24676,7 +24676,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxTest (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5984506085122652522, guid: 4926633d11978c74f9602c3514b6d1af, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984506085122652522, guid: 4926633d11978c74f9602c3514b6d1af, type: 3}
+      propertyPath: m_Volume
+      value: 0.122
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984506085122652522, guid: 4926633d11978c74f9602c3514b6d1af, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984506085122652522, guid: 4926633d11978c74f9602c3514b6d1af, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b6132ae8eef36451ebe5e5a8c7372a8e, type: 3}
+    - target: {fileID: 5984506085122652522, guid: 4926633d11978c74f9602c3514b6d1af, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5984506085122652522, guid: 4926633d11978c74f9602c3514b6d1af, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4926633d11978c74f9602c3514b6d1af, type: 3}
 --- !u!1001 &675836385
 PrefabInstance:
@@ -29379,7 +29400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804495652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.532323, y: -4.7458587, z: -9.558949}
+  m_LocalPosition: {x: 8, y: -4, z: -9.558949}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

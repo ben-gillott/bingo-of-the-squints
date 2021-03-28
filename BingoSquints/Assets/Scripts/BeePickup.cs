@@ -11,6 +11,7 @@ public class BeePickup : MonoBehaviour, IInteract
         Debug.Log("PickUp");
         GM.AddBee();
         Destroy(gameObject);
+        SoundManagerScript.PlaySound("unlockSound");
     }
 
     public void InteractTrigger(GameObject _Instagator)

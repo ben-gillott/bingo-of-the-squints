@@ -22,16 +22,19 @@ public class MenuManager : MonoBehaviour
     {
         MenuEmpts[0].active = false;
         MenuEmpts[1].active = true;
+        SoundManagerScript.PlaySound("menuScrollSound");
     }
 
     public void BacktoMenu()
     {
+        SoundManagerScript.PlaySound("menuScrollSound");
         MenuEmpts[1].active = false;
         MenuEmpts[0].active = true;
     }
 
     public void StartGame()
     {
+        SoundManagerScript.PlaySound("menuSelectSound");
         SceneManager.LoadScene(1);
     }
 
