@@ -131,16 +131,18 @@ public class Movement : MonoBehaviour
         //Jump based on horizontal/vertical inputs
         if(Input.GetButtonDown("Jump"))
         {
-            SoundManagerScript.PlaySound("jumpSound");
+            
+            
 
             if(coll.onGround){
                 anim.SetTrigger("jump");
-
+                SoundManagerScript.PlaySound("jumpSound");
                 Jump(dir);
 
             }
             else if (coll.onWall && !coll.onGround){
                 WallJump(dir);
+                SoundManagerScript.PlaySound("jumpSound");
             }
         }
         
