@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     public int currentBees;
     public int beesToWin;
+    public bool win;
 
     public GameObject[] BeeArray;
 
@@ -31,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         if (currentBees == beesToWin)
         {
-            Debug.Log("Weeeenar");
+            win = true;
         }
     }
 }
