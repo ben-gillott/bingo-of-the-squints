@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public int currentBees;
     public int beesToWin;
 
+    public GameObject[] BeeArray;
+
     void Start()
     {
         
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour
     public void AddBee()
     {
         currentBees++;
+        BeeArray[currentBees - 1].active = true;
     }
 
     public void WinState()
