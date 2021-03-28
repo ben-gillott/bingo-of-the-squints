@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class SoundManagerScript : MonoBehaviour {
+
 
 	public static AudioClip attackWhooshSound, landingSound, unlockSound, jumpSound, jumpPadSound, menuScrollSound, menuSelectSound;
 	static AudioSource audioSrc;
@@ -23,8 +26,17 @@ public class SoundManagerScript : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
-        
+    public static SoundManagerScript Instance;
+
+    private void Awake()
+    {
+        if (Instance)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
+        Instance = this;
     }
 
     public static void PlaySound (string clip) {
