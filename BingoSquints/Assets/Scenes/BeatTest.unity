@@ -46906,7 +46906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentBees: 0
-  beesToWin: 1
+  beesToWin: 5
   win: 0
   BeeArray:
   - {fileID: 99863543}
