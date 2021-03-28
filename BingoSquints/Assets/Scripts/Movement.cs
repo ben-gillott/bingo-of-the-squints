@@ -118,18 +118,19 @@ public class Movement : MonoBehaviour
 
 
 
-    /** ======= Transition functions ========= **/
 
+    /** ======= Transition functions ========= **/
 
     //Move the character
     private void Run(Vector2 dir){
-        //TODO: animations
-        if(dir.x != 0){
-            anim.SetBool("walk", true);
+
+        if(coll.onGround && hasHorizontalInput){
+            anim.SetBool("walking", true);
         }else{
-            anim.SetBool("walk", false);
+            anim.SetBool("walking", false);
         }
-        
+
+
         Vector2 runVelocity = new Vector2(dir.x * speed, rb.velocity.y);
         if(!isWallJumping)
         {
@@ -148,6 +149,8 @@ public class Movement : MonoBehaviour
     //Jump
     private void Jump(Vector2 dir)
     {
+        //Call Jump animation
+        
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += Vector2.up * jumpForce; 
     }
