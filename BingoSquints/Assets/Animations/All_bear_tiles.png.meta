@@ -1,0 +1,1258 @@
+fileFormatVersion: 2
+guid: a2478eb4e9c4e49a68972512882aaeb8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8088478826328985625
+    second: All_bear_tiles_0
+  - first:
+      213: 4056688897818703765
+    second: All_bear_tiles_1
+  - first:
+      213: -8063849138270502904
+    second: All_bear_tiles_2
+  - first:
+      213: -595932381414234865
+    second: All_bear_tiles_3
+  - first:
+      213: -8369519527527854380
+    second: All_bear_tiles_4
+  - first:
+      213: -2624797042640880860
+    second: All_bear_tiles_5
+  - first:
+      213: 535253253638042160
+    second: All_bear_tiles_6
+  - first:
+      213: -1832925512531800877
+    second: All_bear_tiles_7
+  - first:
+      213: 8458527066153462883
+    second: All_bear_tiles_8
+  - first:
+      213: -3195871389642446719
+    second: All_bear_tiles_9
+  - first:
+      213: -846262209791391701
+    second: All_bear_tiles_10
+  - first:
+      213: 7202528956174411801
+    second: All_bear_tiles_11
+  - first:
+      213: 9167533117639824483
+    second: All_bear_tiles_12
+  - first:
+      213: 1740464086911965149
+    second: All_bear_tiles_13
+  - first:
+      213: 7590278986927523242
+    second: All_bear_tiles_14
+  - first:
+      213: 2201619396651367088
+    second: All_bear_tiles_15
+  - first:
+      213: 1784518685413455391
+    second: All_bear_tiles_16
+  - first:
+      213: -5837991749349839938
+    second: All_bear_tiles_17
+  - first:
+      213: 7829429570488948688
+    second: All_bear_tiles_18
+  - first:
+      213: -518521766790821252
+    second: All_bear_tiles_19
+  - first:
+      213: -95680394264471625
+    second: All_bear_tiles_20
+  - first:
+      213: -2150914231175138194
+    second: All_bear_tiles_21
+  - first:
+      213: 7992802507882737840
+    second: All_bear_tiles_22
+  - first:
+      213: -2934988735875874963
+    second: All_bear_tiles_23
+  - first:
+      213: 3714813907650973822
+    second: All_bear_tiles_24
+  - first:
+      213: 1749643750320892345
+    second: All_bear_tiles_25
+  - first:
+      213: -4791338060529001811
+    second: All_bear_tiles_26
+  - first:
+      213: -2792174618359005632
+    second: All_bear_tiles_27
+  - first:
+      213: -6680617752734564292
+    second: All_bear_tiles_28
+  - first:
+      213: -95315734919249218
+    second: All_bear_tiles_29
+  - first:
+      213: 7872661171809726949
+    second: All_bear_tiles_30
+  - first:
+      213: 5541024238599081601
+    second: All_bear_tiles_31
+  - first:
+      213: 819497661423028016
+    second: All_bear_tiles_32
+  - first:
+      213: 2778166409757938778
+    second: All_bear_tiles_36
+  - first:
+      213: 8659013260529980299
+    second: All_bear_tiles_37
+  - first:
+      213: -4727959345772096556
+    second: All_bear_tiles_38
+  - first:
+      213: -7045692641145260786
+    second: All_bear_tiles_39
+  - first:
+      213: -915316862468609527
+    second: All_bear_tiles_40
+  - first:
+      213: -8777608561645275242
+    second: All_bear_tiles_41
+  - first:
+      213: 7729521359028492316
+    second: All_bear_tiles_42
+  - first:
+      213: -9100973251191822283
+    second: All_bear_tiles_43
+  - first:
+      213: 3726359027072759318
+    second: All_bear_tiles_44
+  - first:
+      213: -8835209256397242084
+    second: All_bear_tiles_45
+  - first:
+      213: 381724041996262558
+    second: All_bear_tiles_46
+  - first:
+      213: 644590526434677586
+    second: All_bear_tiles_47
+  - first:
+      213: 761117001637123870
+    second: All_bear_tiles_48
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: All_bear_tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef646fac53ffbf80800000000000000
+      internalID: -8088478826328985625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59731ce2f014c4830800000000000000
+      internalID: 4056688897818703765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8000c0fcee3771090800000000000000
+      internalID: -8063849138270502904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05e6af08a2dab7f0800000000000000
+      internalID: -595932381414234865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dec105555e79db80800000000000000
+      internalID: -8369519527527854380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bf4e91ff8d29bd0800000000000000
+      internalID: -2624797042640880860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032b7ff8ff99d6700800000000000000
+      internalID: 535253253638042160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_7
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc8ac525f32096e0800000000000000
+      internalID: -1832925512531800877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_8
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36caa1d2d89b26570800000000000000
+      internalID: 8458527066153462883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188278057ebf5a3d0800000000000000
+      internalID: -3195871389642446719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_10
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b280c8ef0097144f0800000000000000
+      internalID: -846262209791391701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_11
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918ad3dcce584f360800000000000000
+      internalID: 7202528956174411801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_12
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2561
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3641d8f7cce993f70800000000000000
+      internalID: 9167533117639824483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd756bc9dde572810800000000000000
+      internalID: 1740464086911965149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa54de90686165960800000000000000
+      internalID: 7590278986927523242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_15
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bab3043d29bd8e10800000000000000
+      internalID: 2201619396651367088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16bd132a42e3c810800000000000000
+      internalID: 1784518685413455391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_17
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb675a5f694bfea0800000000000000
+      internalID: -5837991749349839938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_18
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7dee656b8b7ac60800000000000000
+      internalID: 7829429570488948688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_19
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a002a4337ddc8f0800000000000000
+      internalID: -518521766790821252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_20
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b795e730331caef0800000000000000
+      internalID: -95680394264471625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_21
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64397c17ea6622e0800000000000000
+      internalID: -2150914231175138194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_22
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0b33288832cee60800000000000000
+      internalID: 7992802507882737840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_23
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f78528b43d447d0800000000000000
+      internalID: -2934988735875874963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_24
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70973c219bad8330800000000000000
+      internalID: 3714813907650973822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_25
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2049
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9eb5d88bbf74810800000000000000
+      internalID: 1749643750320892345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1537
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa1c576b6fb18db0800000000000000
+      internalID: -4791338060529001811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_27
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1537
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e79d96af33049d0800000000000000
+      internalID: -2792174618359005632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1537
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c308610ac8da943a0800000000000000
+      internalID: -6680617752734564292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_29
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1537
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb202a618de5daef0800000000000000
+      internalID: -95315734919249218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_30
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1537
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1bab6ef9f414d60800000000000000
+      internalID: 7872661171809726949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_31
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1537
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e0789ff2ca5ec40800000000000000
+      internalID: 5541024238599081601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_32
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1537
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037026bf7c07f5b00800000000000000
+      internalID: 819497661423028016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a545b8c51a70e8620800000000000000
+      internalID: 2778166409757938778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 513
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83594bdeaefa2870800000000000000
+      internalID: 8659013260529980299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_38
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 513
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d314ca560ae26eb0800000000000000
+      internalID: -4727959345772096556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_39
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 513
+        width: 504
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05f3ff5fdba83e90800000000000000
+      internalID: -7045692641145260786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_40
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 513
+        width: 500
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a22a3c9242c43f0800000000000000
+      internalID: -915316862468609527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_41
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 513
+        width: 486
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697b4b9d48baf2680800000000000000
+      internalID: -8777608561645275242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_42
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 513
+        width: 473
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1810b829b6c44b60800000000000000
+      internalID: 7729521359028492316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_43
+      rect:
+        serializedVersion: 2
+        x: 3557
+        y: 513
+        width: 539
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538216c0c09d2b180800000000000000
+      internalID: -9100973251191822283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_44
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 513
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616fd32cacfa6b330800000000000000
+      internalID: 3726359027072759318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_45
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 513
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1103340ef7036580800000000000000
+      internalID: -8835209256397242084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_46
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 513
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cd9656ef72c4500800000000000000
+      internalID: 381724041996262558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_47
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 513
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25398b92bab02f800800000000000000
+      internalID: 644590526434677586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: All_bear_tiles_48
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 513
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17571361e7009a00800000000000000
+      internalID: 761117001637123870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f721c5753d659415daff5bc9b086d2b5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

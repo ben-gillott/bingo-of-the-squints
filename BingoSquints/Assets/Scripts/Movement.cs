@@ -64,11 +64,12 @@ public class Movement : MonoBehaviour
         float yRaw = Input.GetAxisRaw("Vertical");
         hasHorizontalInput = (x > inpSensitivity || x < -inpSensitivity);
     
-    
+
 
         if(coll.onGround){
             anim.SetBool("grounded", true);
             anim.ResetTrigger("jump");
+            anim.ResetTrigger("walljump");
         }else{
             anim.SetBool("grounded", false);
         }
@@ -78,6 +79,20 @@ public class Movement : MonoBehaviour
         }else{
             anim.SetBool("hasinput", false);
         }
+
+        if(isWallSliding){
+            anim.SetBool("onwall", true);
+            anim.ResetTrigger("walljump");
+        }else{
+            anim.SetBool("onwall", false);
+        }
+
+        if(isWallJumping){
+            anim.SetTrigger("walljump");
+        }else{
+            anim.ResetTrigger("walljump");
+        }
+
 
 
         
@@ -201,6 +216,7 @@ public class Movement : MonoBehaviour
             isWallSliding = true;
             wallSlideTimeElapsed = 0;
         }
+        
 
         wallSlideTimeElapsed += Time.deltaTime;
 
