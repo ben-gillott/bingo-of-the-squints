@@ -63,11 +63,38 @@ public class Movement : MonoBehaviour
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
         hasHorizontalInput = (x > inpSensitivity || x < -inpSensitivity);
+    
+    
+
+        if(coll.onGround){
+            anim.SetBool("grounded", true);
+            anim.ResetTrigger("jump");
+        }else{
+            anim.SetBool("grounded", false);
+        }
+
+        if(hasHorizontalInput){
+            anim.SetBool("hasinput", true);
+        }else{
+            anim.SetBool("hasinput", false);
+        }
+
+
         
+        // public bool isGrounded;
+        // public bool isWallSliding;
+        // public bool isWallJumping;
+
+        // grounded
+        // hasinput
+        // onwall
+        // jump
+        // if(isWallSliding){
+        // }
+
         Vector2 dir = new Vector2(x,y);
         Run(dir);
         Flip();
-
         
         //Wall sliding this frame
         //TODO: only stick if appropriate side, check col right and left
@@ -96,7 +123,9 @@ public class Movement : MonoBehaviour
         if(Input.GetButtonDown("Jump"))
         {
             if(coll.onGround){
+                anim.SetTrigger("jump");
                 Jump(dir);
+
             }
             else if (coll.onWall && !coll.onGround){
                 WallJump(dir);
@@ -127,13 +156,6 @@ public class Movement : MonoBehaviour
 
     //Move the character
     private void Run(Vector2 dir){
-
-        if(coll.onGround && hasHorizontalInput){
-            // anim.SetBool("walking", true);
-        }else{
-            // anim.SetBool("walking", false);
-        }
-
 
         Vector2 runVelocity = new Vector2(dir.x * speed, rb.velocity.y);
         if(!isWallJumping)

@@ -48,11 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e762bcaf87ccb464e9a1af96017246cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 5257795528404846396, guid: ffc3c75fa9b4e43fe8970059c1f19ad9, type: 3}
+  rb: {fileID: 0}
   spriteRenderer: {fileID: 5257795528413834022}
   anim: {fileID: 845112690}
   speed: 10
-  slideSpeed: 0.5
+  slideSpeed: 1
   jumpForce: 10
   wallJumpVerticalForce: 10
   wallJumpHorizontalForce: 10
@@ -60,7 +60,7 @@ MonoBehaviour:
   wallJumpGrav: 1
   usualGravity: {x: 0, y: -15, z: 0}
   wallJumpLerpDuration: 3
-  wallSlideLerpDuration: 2
+  wallSlideLerpDuration: 10
   isGrounded: 1
   isWallSliding: 0
   isWallJumping: 0
@@ -88,8 +88,8 @@ MonoBehaviour:
   onRightWall: 0
   onLeftWall: 0
   wallSide: 0
-  bottomPoint: {x: 0, y: -1.5, z: 0}
-  bottomSize: {x: 1, y: 0.15, z: 1}
+  bottomPoint: {x: 0, y: -1.35, z: 0}
+  bottomSize: {x: 0.7, y: 0.1, z: 1}
   leftPoint: {x: -0.5, y: 0, z: 0}
   leftSize: {x: 0.3, y: 1.5, z: 1}
   rightPoint: {x: 0.5, y: 0, z: 0}
@@ -139,8 +139,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.68781585, z: 1}
-  m_Center: {x: 0, y: -0.09390788, z: 0}
+  m_Size: {x: 0.25, y: 0.7034256, z: 1}
+  m_Center: {x: 0, y: -0.101712674, z: 0}
 --- !u!1 &5257795528413834016
 GameObject:
   m_ObjectHideFlags: 0
