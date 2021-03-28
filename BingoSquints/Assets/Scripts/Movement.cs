@@ -118,27 +118,19 @@ public class Movement : MonoBehaviour
 
 
 
-    /** ======= Transition functions ========= **/
 
+    /** ======= Transition functions ========= **/
 
     //Move the character
     private void Run(Vector2 dir){
-        if (anim == null)
-        {
-            return;
+
+        if(coll.onGround && hasHorizontalInput){
+            anim.SetBool("walking", true);
+        }else{
+            anim.SetBool("walking", false);
         }
-        else
-        {  //TODO: animations
-            if (dir.x != 0)
-            {
-                anim.SetBool("walk", true);
-            }
-            else
-            {
-                anim.SetBool("walk", false);
-            }
-        }
-        
+
+
         Vector2 runVelocity = new Vector2(dir.x * speed, rb.velocity.y);
         if(!isWallJumping)
         {
@@ -157,6 +149,8 @@ public class Movement : MonoBehaviour
     //Jump
     private void Jump(Vector2 dir)
     {
+        //Call Jump animation
+        
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.velocity += Vector2.up * jumpForce; 
     }
@@ -229,13 +223,13 @@ public class Movement : MonoBehaviour
     void Flip()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
-        if (horizontal > 0)
+        if (horizontal < 0)
         {
             //transform.localScale = new Vector3(1, 1, 1);
             // facingRight = true;
             spriteRenderer.flipX = false;
         }
-        else if (horizontal < 0)
+        else if (horizontal > 0)
         {
             //transform.localScale = new Vector3(-1, 1, 1);
             // facingRight = false;
