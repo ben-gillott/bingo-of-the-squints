@@ -10,9 +10,10 @@ public class Movement : MonoBehaviour
     public Rigidbody rb;
 
     private Collision coll;
+    // private SoundManager soundManager;
     public SpriteRenderer spriteRenderer;
     public Animator anim;
-
+    public AudioSource walkAudio;
 
     [Space]
     [Header("Stats")]
@@ -93,19 +94,12 @@ public class Movement : MonoBehaviour
             anim.ResetTrigger("walljump");
         }
 
-
-
-        
-        // public bool isGrounded;
-        // public bool isWallSliding;
-        // public bool isWallJumping;
-
-        // grounded
-        // hasinput
-        // onwall
-        // jump
-        // if(isWallSliding){
-        // }
+        if(coll.onGround && (rb.velocity.x != 0)){// !walkAudio.isPlaying){
+            walkAudio.Play();
+            Debug.Log("Should play" + rb.velocity.x );
+        }else{
+            walkAudio.Pause();
+        }
 
         Vector2 dir = new Vector2(x,y);
         Run(dir);
@@ -113,7 +107,7 @@ public class Movement : MonoBehaviour
         
         //Wall sliding this frame
         //TODO: only stick if appropriate side, check col right and left
-        if(coll.onWall && !coll.onGround && hasHorizontalInput)  
+        if(coll.onWall && !coll.onGround)  
         {
             WallSlide();
             
@@ -137,8 +131,11 @@ public class Movement : MonoBehaviour
         //Jump based on horizontal/vertical inputs
         if(Input.GetButtonDown("Jump"))
         {
+            SoundManagerScript.PlaySound("jumpSound");
+
             if(coll.onGround){
                 anim.SetTrigger("jump");
+
                 Jump(dir);
 
             }
@@ -213,6 +210,7 @@ public class Movement : MonoBehaviour
     private void WallSlide()
     {   
         if(!isWallSliding){ //Start of the slide
+            SoundManagerScript.PlaySound("landingSound");
             isWallSliding = true;
             wallSlideTimeElapsed = 0;
         }
@@ -237,6 +235,7 @@ public class Movement : MonoBehaviour
 
     //Player touches or leaves the ground - triggers once
     private void TouchGround(){
+        SoundManagerScript.PlaySound("landingSound");
         isGrounded = true;
         betterJumpingEnabled = true;
         isWallJumping = false;
