@@ -5821,6 +5821,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1422622639, guid: f75b60a2daf1df44ca2bd03616990cc6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422622639, guid: f75b60a2daf1df44ca2bd03616990cc6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.44
+      objectReference: {fileID: 0}
     - target: {fileID: 1550174211643037959, guid: f75b60a2daf1df44ca2bd03616990cc6, type: 3}
       propertyPath: m_Name
       value: TestPrefab
@@ -5831,11 +5839,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1550174211643037978, guid: f75b60a2daf1df44ca2bd03616990cc6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.5712895
+      value: 2.29
       objectReference: {fileID: 0}
     - target: {fileID: 1550174211643037978, guid: f75b60a2daf1df44ca2bd03616990cc6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.24467117
+      value: -1.23
       objectReference: {fileID: 0}
     - target: {fileID: 1550174211643037978, guid: f75b60a2daf1df44ca2bd03616990cc6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5871,6 +5879,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f75b60a2daf1df44ca2bd03616990cc6, type: 3}
+--- !u!1 &845141277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1550174211643037959, guid: f75b60a2daf1df44ca2bd03616990cc6, type: 3}
+  m_PrefabInstance: {fileID: 845141276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &845141278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845141277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956acb42c18f6044a924ad384b8192a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 845141279}
+  AttackRange: 0.95
+  damageableLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  Damage: 0
+--- !u!4 &845141279 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1422622639, guid: f75b60a2daf1df44ca2bd03616990cc6, type: 3}
+  m_PrefabInstance: {fileID: 845141276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!213 &847964461
 Sprite:
   m_ObjectHideFlags: 0
