@@ -61372,6 +61372,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 122081426519983541, guid: 39df6ca25d466dd438e0e33f9f48cbec, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 122081426519983541, guid: 39df6ca25d466dd438e0e33f9f48cbec, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122081426519983541, guid: 39df6ca25d466dd438e0e33f9f48cbec, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122081426519983541, guid: 39df6ca25d466dd438e0e33f9f48cbec, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7484475742008264416, guid: 39df6ca25d466dd438e0e33f9f48cbec, type: 3}
       propertyPath: m_Name
       value: MainPlayerForReal

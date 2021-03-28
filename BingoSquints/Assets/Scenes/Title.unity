@@ -1011,8 +1011,8 @@ Camera:
   m_GameObject: {fileID: 894181702}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 20c2bc4c0e93dc244bd6d0592a2da4d1, type: 3}
+  m_Texture: {fileID: 2800000, guid: e8484c9091dd1894ea8abc23863421e1, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
